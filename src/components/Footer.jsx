@@ -21,10 +21,10 @@ export default function Footer() {
             {/* Logo */}
             <div className="mb-4">
               <img
-                src="/sme-alliance-logo.svg"
+                src="/SME Alliance Logo V2.png"
                 alt="SME Alliance"
-                className="h-8 w-auto"
-                style={{ maxWidth: '160px' }}
+                className="h-10 w-auto"
+                style={{ maxWidth: '180px' }}
               />
             </div>
 
