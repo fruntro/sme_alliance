@@ -112,22 +112,15 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#join"
+              href="mailto:info@smealliance.co.uk"
               className="relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-base font-semibold text-white overflow-hidden group transition-all duration-200 hover:shadow-lg hover:shadow-blue-900/30"
               style={{ background: 'linear-gradient(to right, #1C6ED5, #1CC5B8)' }}
             >
-              <span className="relative z-10">Join the Alliance</span>
+              <span className="relative z-10">Partner With Us</span>
               <svg className="relative z-10 w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
               <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-            </a>
-
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded text-base font-semibold text-[#BFC7D5] hover:text-white border border-white/[0.12] hover:border-white/25 bg-white/[0.03] hover:bg-white/[0.06] transition-all duration-200"
-            >
-              Partner With Us
             </a>
           </div>
 

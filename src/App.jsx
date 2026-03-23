@@ -6,7 +6,6 @@ import WhyWeExist from './components/WhyWeExist'
 import Benefits from './components/Benefits'
 import WhoItsFor from './components/WhoItsFor'
 import Members from './components/Members'
-import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
 
 export default function App() {
@@ -20,7 +19,6 @@ export default function App() {
         <Benefits />
         <WhoItsFor />
         <Members />
-        <FinalCTA />
       </main>
       <Footer />
     </div>

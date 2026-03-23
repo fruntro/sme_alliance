@@ -14,7 +14,7 @@ const navLinks = [
   { label: 'Members', href: '#members' },
   { label: 'Benefits', href: '#benefits' },
   { label: 'Partners', href: '#partners' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Contact', href: 'mailto:info@smealliance.co.uk' },
 ]
 
 export default function Navbar() {
@@ -58,17 +58,11 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="#contact"
-              className="text-[#BFC7D5] hover:text-white text-sm font-medium transition-colors duration-200"
-            >
-              Speak to Us
-            </a>
-            <a
-              href="#join"
+              href="mailto:info@smealliance.co.uk"
               className="relative inline-flex items-center px-5 py-2.5 rounded text-sm font-semibold text-white overflow-hidden group"
               style={{ background: 'linear-gradient(to right, #1C6ED5, #1CC5B8)' }}
             >
-              <span className="relative z-10">Join the Alliance</span>
+              <span className="relative z-10">Speak to Us</span>
               <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
             </a>
           </div>
@@ -107,16 +101,13 @@ export default function Navbar() {
               </a>
             ))}
             <div className="pt-2 border-t border-white/[0.06] flex flex-col gap-3">
-              <a href="#contact" onClick={() => setMenuOpen(false)} className="text-[#BFC7D5] text-sm font-medium">
-                Speak to Us
-              </a>
               <a
-                href="#join"
+                href="mailto:info@smealliance.co.uk"
                 onClick={() => setMenuOpen(false)}
                 className="inline-flex items-center justify-center px-5 py-2.5 rounded text-sm font-semibold text-white"
                 style={{ background: 'linear-gradient(to right, #1C6ED5, #1CC5B8)' }}
               >
-                Join the Alliance
+                Speak to Us
               </a>
             </div>
           </div>

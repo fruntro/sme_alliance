@@ -55,18 +55,6 @@ export default function WhatWeAre() {
               Our members are proven operators. They have won contracts, delivered complex projects, and built real expertise. What they gain through the Alliance is reach — the ability to act collectively, present unified capability, and access opportunities that match their ambition.
             </p>
 
-            <div className="mt-10">
-              <a
-                href="#join"
-                className="inline-flex items-center gap-2 text-sm font-semibold group"
-                style={{ color: '#1CC5B8' }}
-              >
-                Learn how membership works
-                <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                </svg>
-              </a>
-            </div>
           </div>
 
           {/* Right column — pillars */}
