@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 const SMALogo = () => (
   <img
-    src="/SME Alliance Logo V2.png"
+    src="/assets/SME Alliance Logo V2.png"
     alt="SME Alliance"
     className="h-10 w-auto"
     style={{ maxWidth: '180px' }}
