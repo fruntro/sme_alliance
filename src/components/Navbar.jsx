@@ -1,32 +1,12 @@
 import React, { useState, useEffect } from 'react'
 
 const SMALogo = () => (
-  <div className="flex items-center gap-3">
-    <div className="flex items-center">
-      {/* Hexagonal icon from brand */}
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="navGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1C6ED5"/>
-            <stop offset="100%" stopColor="#1CC5B8"/>
-          </linearGradient>
-        </defs>
-        <polygon points="18,2 32,10 32,26 18,34 4,26 4,10" fill="url(#navGrad)" opacity="0.15" stroke="url(#navGrad)" strokeWidth="1.5"/>
-        <polygon points="18,7 27,12 27,24 18,29 9,24 9,12" fill="url(#navGrad)" opacity="0.25"/>
-        <circle cx="18" cy="18" r="4" fill="url(#navGrad)"/>
-        <line x1="18" y1="7" x2="18" y2="12" stroke="url(#navGrad)" strokeWidth="1" opacity="0.6"/>
-        <line x1="18" y1="24" x2="18" y2="29" stroke="url(#navGrad)" strokeWidth="1" opacity="0.6"/>
-        <line x1="9" y1="12" x2="13" y2="14.5" stroke="url(#navGrad)" strokeWidth="1" opacity="0.6"/>
-        <line x1="23" y1="14.5" x2="27" y2="12" stroke="url(#navGrad)" strokeWidth="1" opacity="0.6"/>
-        <line x1="9" y1="24" x2="13" y2="21.5" stroke="url(#navGrad)" strokeWidth="1" opacity="0.6"/>
-        <line x1="23" y1="21.5" x2="27" y2="24" stroke="url(#navGrad)" strokeWidth="1" opacity="0.6"/>
-      </svg>
-    </div>
-    <div className="flex flex-col leading-none">
-      <span className="text-white font-bold text-base tracking-widest uppercase">SME</span>
-      <span className="text-[#7A8599] font-light text-[10px] tracking-[0.25em] uppercase">Alliance</span>
-    </div>
-  </div>
+  <img
+    src="/sme-alliance-logo.svg"
+    alt="SME Alliance"
+    className="h-8 w-auto"
+    style={{ maxWidth: '160px' }}
+  />
 )
 
 const navLinks = [
