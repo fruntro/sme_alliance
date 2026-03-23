@@ -188,32 +188,21 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Stats row */}
-          <div className="mt-20 pt-8 border-t border-white/[0.06] grid grid-cols-3 gap-8 max-w-lg">
-            {[
-              { value: '30+', label: 'Member firms' },
-              { value: '£200M+', label: 'Collective capability' },
-              { value: '12+', label: 'Sectors served' },
-            ].map(({ value, label }) => (
-              <div key={label}>
-                <div className="text-2xl font-bold mb-1 gradient-text">
-                  {value}
-                </div>
-                <div className="text-xs text-[#7A8599] font-medium tracking-wide uppercase">{label}</div>
-              </div>
-            ))}
-          </div>
-
           {/* Sector tags */}
-          <div className="mt-8 flex flex-wrap gap-2">
-            {sectors.map((s) => (
-              <span
-                key={s}
-                className="text-xs px-3 py-1 rounded-full border border-white/[0.08] text-[#6B7280] tracking-wide"
-              >
-                {s}
-              </span>
-            ))}
+          <div className="mt-16 pt-8 border-t border-white/[0.06]">
+            <p className="text-xs font-semibold tracking-[0.18em] uppercase text-[#7A8599] mb-5">
+              Key markets
+            </p>
+            <div className="flex flex-wrap gap-3">
+              {sectors.map((s) => (
+                <span
+                  key={s}
+                  className="text-sm font-medium px-4 py-2 rounded-full border border-white/[0.12] text-[#BFC7D5] bg-white/[0.03] hover:bg-white/[0.06] hover:border-white/[0.2] transition-colors duration-200 tracking-wide"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
