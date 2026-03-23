@@ -4,7 +4,7 @@ const members = [
     name: 'Advance Consultancy',
     logo: '/assets/Advance Logo.png',
     website: 'https://www.advance-consultancy.com/',
-    lightBg: false,
+    lightBg: true,
   },
   {
     name: 'Akerlof',
@@ -22,7 +22,7 @@ const members = [
     name: 'CMR',
     logo: '/assets/cmr-logo-hp.svg',
     website: 'https://cmr.global/',
-    lightBg: false,
+    lightBg: true,
   },
   {
     name: 'Firstco',
