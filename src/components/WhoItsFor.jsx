@@ -7,7 +7,7 @@ const criteria = [
   },
   {
     label: 'Specialist, not generalist',
-    detail: 'You have a defined domain: project management, technology, advisory, engineering, finance, legal, or similar. Depth matters more than breadth.',
+    detail: 'You have a defined domain: infrastructure delivery, construction, engineering, technology, advisory, finance, or similar. Depth and track record matter more than breadth.',
   },
   {
     label: 'Collaborative by instinct',
@@ -49,7 +49,7 @@ export default function WhoItsFor() {
             </p>
 
             <p className="text-[#7A8599] leading-relaxed mb-10">
-              If you are excellent at what you do but find yourself limited by scale, scope, or visibility, the Alliance exists for you. Membership is selective because the standard has to mean something.
+              If you are excellent at what you do — whether in infrastructure, construction, energy, defence, or professional services — but find yourself limited by scale, scope, or visibility, the Alliance exists for you. Membership is selective because the standard has to mean something.
             </p>
 
           </div>

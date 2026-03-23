@@ -8,7 +8,7 @@ const pillars = [
       </svg>
     ),
     title: 'Collaboration over competition',
-    body: 'Member firms share intelligence, capacity, and opportunity. We compete where we must, but we grow through partnership.',
+    body: 'Member firms share intelligence, capacity, and opportunity across sectors. We compete where we must, but we grow through partnership.',
   },
   {
     icon: (
@@ -17,7 +17,7 @@ const pillars = [
       </svg>
     ),
     title: 'Collective capability at scale',
-    body: 'Together, we can take on engagements that would be out of reach for any individual firm — without the overhead of a large organisation.',
+    body: 'Together, we can take on major infrastructure programmes and complex engagements that would be out of reach for any individual firm — without the overhead of a large organisation.',
   },
   {
     icon: (
@@ -26,7 +26,7 @@ const pillars = [
       </svg>
     ),
     title: 'Access to larger opportunities',
-    body: 'Frameworks, major bids, and strategic partnerships that require collective scale become accessible through the Alliance.',
+    body: 'Infrastructure frameworks, major public and private sector bids, and strategic partnerships that require collective scale become accessible through the Alliance.',
   },
 ]
 
@@ -48,13 +48,12 @@ export default function WhatWeAre() {
             </h2>
 
             <p className="text-[#BFC7D5] text-lg leading-relaxed mb-6">
-              SME Alliance is not a directory. It is a working coalition of specialist firms aligned around delivery, innovation, and shared opportunity.
+              SME Alliance is not a directory. It is a working coalition of specialist firms — drawn primarily from infrastructure, construction, energy, defence, and advisory — aligned around delivery, innovation, and shared opportunity.
             </p>
 
             <p className="text-[#7A8599] leading-relaxed">
-              Our members are proven operators. They have won contracts, delivered complex projects, and built real expertise. What they gain through the Alliance is reach — the ability to act collectively, present unified capability, and access opportunities that match their ambition.
+              Our members are proven operators with track records across some of the most demanding programmes in the UK and beyond. What they gain through the Alliance is reach — the ability to act collectively, present unified capability, and access opportunities that match their ambition.
             </p>
-
           </div>
 
           {/* Right column — pillars */}

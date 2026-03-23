@@ -52,8 +52,8 @@ export default function Members() {
             <span className="gradient-text">mean business</span>
           </h2>
           <p className="text-lg text-[#9CA3AF] max-w-2xl mx-auto">
-            Each member is hand-picked for capability, integrity, and commitment
-            to delivering exceptional outcomes in the public and private sector.
+            Each member is hand-picked for capability, integrity, and track record —
+            delivering complex outcomes across infrastructure, construction, energy, and beyond.
           </p>
         </div>
 
