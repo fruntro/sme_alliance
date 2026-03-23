@@ -2,37 +2,37 @@
 const members = [
   {
     name: 'Advance Consultancy',
-    logo: '/Advance Logo.png',
+    logo: '/assets/Advance Logo.png',
     website: 'https://www.advance-consultancy.com/',
     lightBg: false,
   },
   {
     name: 'Akerlof',
-    logo: '/Akerlof Logo.png',
+    logo: '/assets/Akerlof Logo.png',
     website: 'https://akerlof.co.uk/',
     lightBg: false,
   },
   {
     name: 'Anturas',
-    logo: '/anturas logo.png',
+    logo: '/assets/anturas logo.png',
     website: 'https://www.anturasconsulting.com/',
     lightBg: true,
   },
   {
     name: 'CMR',
-    logo: '/cmr-logo-hp.svg',
+    logo: '/assets/cmr-logo-hp.svg',
     website: 'https://cmr.global/',
     lightBg: false,
   },
   {
     name: 'Firstco',
-    logo: '/FirstCo logo.png',
+    logo: '/assets/FirstCo logo.png',
     website: 'https://www.firstco.uk.com/',
     lightBg: true,
   },
   {
     name: 'PlanAhead',
-    logo: '/PlanAhead logo.png',
+    logo: '/assets/PlanAhead logo.png',
     website: 'https://www.planaheadpm.com/',
     lightBg: true,
   },

@@ -21,7 +21,7 @@ export default function Footer() {
             {/* Logo */}
             <div className="mb-4">
               <img
-                src="/SME Alliance Logo V2.png"
+                src="/assets/SME Alliance Logo V2.png"
                 alt="SME Alliance"
                 className="h-10 w-auto"
                 style={{ maxWidth: '180px' }}
