@@ -18,43 +18,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Brand column */}
           <div className="md:col-span-1">
-            {/* Logo mark */}
-            <div className="flex items-center gap-3 mb-4">
-              <div className="relative w-9 h-9 flex-shrink-0">
-                <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                  <defs>
-                    <linearGradient id="footer-grad" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-                      <stop offset="0%" stopColor="#1C6ED5" />
-                      <stop offset="100%" stopColor="#1CC5B8" />
-                    </linearGradient>
-                  </defs>
-                  <polygon
-                    points="18,2 33,10.5 33,25.5 18,34 3,25.5 3,10.5"
-                    fill="url(#footer-grad)"
-                    opacity="0.15"
-                  />
-                  <polygon
-                    points="18,2 33,10.5 33,25.5 18,34 3,25.5 3,10.5"
-                    fill="none"
-                    stroke="url(#footer-grad)"
-                    strokeWidth="1.5"
-                  />
-                  <text
-                    x="18"
-                    y="23"
-                    textAnchor="middle"
-                    fontSize="13"
-                    fontWeight="700"
-                    fontFamily="Inter, sans-serif"
-                    fill="url(#footer-grad)"
-                  >
-                    S
-                  </text>
-                </svg>
-              </div>
-              <span className="text-white font-bold text-lg tracking-tight">
-                SME Alliance
-              </span>
+            {/* Logo */}
+            <div className="mb-4">
+              <img
+                src="/sme-alliance-logo.svg"
+                alt="SME Alliance"
+                className="h-8 w-auto"
+                style={{ maxWidth: '160px' }}
+              />
             </div>
 
             <p className="text-[#6B7280] text-sm leading-relaxed max-w-xs">
