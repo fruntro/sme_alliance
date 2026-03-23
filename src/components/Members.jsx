@@ -1,4 +1,6 @@
-// Advance logo as inline SVG (dark background)
+import { useState } from 'react';
+
+// Advance logo as inline SVG (dark background) - provided SVG
 function AdvanceLogo() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="180" height="35" viewBox="0 0 256.001 49.239">
@@ -14,8 +16,40 @@ function AdvanceLogo() {
         <path d="M141.767,64.666v-3.63a13.13,13.13,0,0,1-9.587,4.17h-.749a13.13,13.13,0,0,1,0-26.219h.054a3.24,3.24,0,0,1,.371,0h.3a13.13,13.13,0,0,1,7.422,2.328v4.723a9.614,9.614,0,0,0-15.329.56h0l-.047.074v.047c-.067.094-.128.189-.189.29A9.985,9.985,0,0,0,123.841,57l.155.27.2.3h0v.04a9.628,9.628,0,0,0,16.328-.918v-.054a1.6,1.6,0,0,0,.128-.236,9.811,9.811,0,0,0,.972-4.082h0V39.5h3.7V53.783l.061,10.883Z" transform="translate(-58.793 -23.152)" fill="#ff5c53"/>
         <path d="M187.68,26.08V38.953A13.13,13.13,0,0,0,178.1,34.8h-.722a13.13,13.13,0,0,0-.094,26.219h.142a3.8,3.8,0,0,0,.391,0h.283a13.157,13.157,0,0,0,10.64-5.452,12.988,12.988,0,0,0,2.49-7.685V46.2L191.3,26.08ZM186.7,52.258h0l-.121.229v.054h0l-.04.074a9.641,9.641,0,0,1-8.407,4.932H177.5a1.955,1.955,0,0,1-.594-.061,8.6,8.6,0,0,1-.911-.162,9.844,9.844,0,0,1-5.33-3.373h0a5.045,5.045,0,0,1-.324-.425l-.047-.067h0v-.04h0c-.067-.094-.128-.2-.2-.3a2.825,2.825,0,0,1-.162-.283h0a9.938,9.938,0,0,1-1.248-4.844,9.83,9.83,0,0,1,1.262-4.851,2.324,2.324,0,0,1,.169-.277c.061-.1.121-.2.189-.29h0a.122.122,0,0,1,.034-.047V42.5c.061-.094.128-.182.2-.27l.148-.209c.088-.115.182-.229.283-.337h0a9.992,9.992,0,0,1,4.446-2.861c.243-.074.486-.135.735-.189l.439-.081a9.831,9.831,0,0,1,1-.115h1.3a9.641,9.641,0,0,1,7.752,4.919l.034.061h0v.04h0a2.587,2.587,0,0,1,.115.236h0a10.12,10.12,0,0,1,0,8.663Z" transform="translate(-73.725 -18.955)" fill="#ff5c53"/>
         <path d="M268.574,64.666v-3.63a13.136,13.136,0,0,1-9.587,4.17h-.756a13.13,13.13,0,0,1,0-26.219h.054a3.239,3.239,0,0,1,.371,0h.3a13.1,13.1,0,0,1,7.462,2.341v4.723a9.608,9.608,0,0,0-15.336.546h0l-.047.074-.04.047c-.067.094-.128.189-.189.29A9.985,9.985,0,0,0,250.641,57l.155.27c.074.115.135.209.2.3h0v.04a9.628,9.628,0,0,0,16.328-.918v-.054a2.587,2.587,0,0,0,.121-.236,9.817,9.817,0,0,0,.978-4.082h0V39.5h3.549V53.783l.061,10.883Z" transform="translate(-100.043 -23.152)" fill="#ff5c53"/>
+        <path d="M202.356,74.249V68.44h0a11.362,11.362,0,0,1-3.616,4.723h0v1.08Z" transform="translate(-84.723 -32.735)" fill="#ff5c53"/>
+        <path d="M152.71,58.636h0V58.38A1.627,1.627,0,0,1,152.71,58.636Z" transform="translate(-69.75 -29.463)" fill="#ff5c53"/>
+        <path d="M152.72,58.38v.256h0Z" transform="translate(-69.752 -29.463)" fill="#ff5c53"/>
+        <path d="M279.53,58.636h0V58.38A1.634,1.634,0,0,1,279.53,58.636Z" transform="translate(-111.006 -29.463)" fill="#ff5c53"/>
+        <path d="M279.53,58.38v.256h0Z" transform="translate(-111.006 -29.463)" fill="#ff5c53"/>
       </g>
     </svg>
+  );
+}
+
+// Logo image component with error handling
+function LogoImage({ src, alt, lightBg }) {
+  const [failed, setFailed] = useState(false);
+
+  if (failed) {
+    return (
+      <span
+        className="text-2xl font-bold tracking-tight"
+        style={{ color: lightBg ? '#1C6ED5' : '#ffffff' }}
+      >
+        {alt}
+      </span>
+    );
+  }
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      className="max-h-full max-w-[200px] object-contain"
+      crossOrigin="anonymous"
+      referrerPolicy="no-referrer"
+      onError={() => setFailed(true)}
+    />
   );
 }
 
@@ -23,7 +57,7 @@ function AdvanceLogo() {
 const members = [
   {
     name: 'Advance',
-    logoType: 'svg-component',
+    logoType: 'svg',
     website: 'https://www.advance-consultancy.com/',
     lightBg: false,
     description: 'Technology & digital transformation',
@@ -92,34 +126,22 @@ export default function Members() {
               href={member.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex flex-col items-center justify-center rounded-2xl border border-white/10 p-8 transition-all duration-300 hover:border-[#1C6ED5]/50 hover:shadow-lg hover:shadow-[#1C6ED5]/10 overflow-hidden"
+              className="group relative flex flex-col items-center justify-center rounded-2xl border border-white/10 p-8 transition-all duration-300 hover:border-[#1C6ED5]/50 hover:shadow-lg hover:shadow-[#1C6ED5]/10 overflow-hidden min-h-[180px]"
               style={{ backgroundColor: member.lightBg ? '#ffffff' : '#1a2030' }}
             >
               {/* Gradient top accent on hover */}
               <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#1C6ED5] to-[#1CC5B8] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Logo */}
-              <div className="h-16 flex items-center justify-center mb-4">
-                {member.logoType === 'svg-component' ? (
+              <div className="h-16 flex items-center justify-center mb-4 w-full">
+                {member.logoType === 'svg' ? (
                   <AdvanceLogo />
                 ) : (
-                  <>
-                    <img
-                      src={member.logo}
-                      alt={`${member.name} logo`}
-                      className="max-h-full max-w-full object-contain"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'block';
-                      }}
-                    />
-                    <span
-                      className="hidden text-xl font-bold"
-                      style={{ color: member.lightBg ? '#1C6ED5' : '#ffffff' }}
-                    >
-                      {member.name}
-                    </span>
-                  </>
+                  <LogoImage
+                    src={member.logo}
+                    alt={member.name}
+                    lightBg={member.lightBg}
+                  />
                 )}
               </div>
 
