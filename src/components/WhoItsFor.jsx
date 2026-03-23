@@ -7,7 +7,7 @@ const criteria = [
   },
   {
     label: 'Specialist, not generalist',
-    detail: 'You have a defined domain: project management, technology, advisory, engineering, finance, legal, or similar. Depth matters more than breadth.',
+    detail: 'You have a defined domain: infrastructure delivery, construction, engineering, technology, advisory, finance, or similar. Depth and track record matter more than breadth.',
   },
   {
     label: 'Collaborative by instinct',
@@ -49,20 +49,9 @@ export default function WhoItsFor() {
             </p>
 
             <p className="text-[#7A8599] leading-relaxed mb-10">
-              If you are excellent at what you do but find yourself limited by scale, scope, or visibility, the Alliance exists for you. Membership is selective because the standard has to mean something.
+              If you are excellent at what you do — whether in infrastructure, construction, energy, defence, or professional services — but find yourself limited by scale, scope, or visibility, the Alliance exists for you. Membership is selective because the standard has to mean something.
             </p>
 
-            <a
-              href="#join"
-              className="relative inline-flex items-center gap-2 px-8 py-4 rounded text-base font-semibold text-white overflow-hidden group hover:shadow-lg hover:shadow-blue-900/30 transition-all duration-200"
-              style={{ background: 'linear-gradient(to right, #1C6ED5, #1CC5B8)' }}
-            >
-              <span className="relative z-10">Apply to Join</span>
-              <svg className="relative z-10 w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-              </svg>
-              <span className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-            </a>
           </div>
 
           {/* Right — criteria list */}

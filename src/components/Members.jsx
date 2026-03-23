@@ -52,8 +52,8 @@ export default function Members() {
             <span className="gradient-text">mean business</span>
           </h2>
           <p className="text-lg text-[#9CA3AF] max-w-2xl mx-auto">
-            Each member is hand-picked for capability, integrity, and commitment
-            to delivering exceptional outcomes in the public and private sector.
+            Each member is hand-picked for capability, integrity, and track record —
+            delivering complex outcomes across infrastructure, construction, energy, and beyond.
           </p>
         </div>
 
@@ -95,21 +95,6 @@ export default function Members() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="text-center">
-          <p className="text-[#9CA3AF] mb-6">
-            Interested in joining this network of high-calibre businesses?
-          </p>
-          <a
-            href="#join"
-            className="inline-flex items-center gap-2 px-8 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#1C6ED5] to-[#1CC5B8] hover:opacity-90 transition-opacity"
-          >
-            Apply to Become a Member
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
       </div>
     </section>
   );
